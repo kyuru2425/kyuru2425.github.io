@@ -1,0 +1,119 @@
+#navi a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+#navi a:hover {
+    background-color: aliceblue;
+    color: red;
+}
+
+body {
+    background-color: darkcyan;
+}
+
+img {
+    width: 125px;
+    height: 175px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.mydiv{
+        background-color: white;
+        
+}
+#digi{
+    background-color: rgb(126, 32, 126);
+    color: white;
+}
+.lnbook{
+    background-color: rgb(54, 54, 234);
+
+}
+.mbook{
+    background-color: brown;
+}
+.lnbook, .mbook{
+    width: 10vh;
+    text-align: center;
+    border-radius: 8px;
+    align-self: center;
+}
+.intable{
+    display: flex;
+    flex-direction: column;
+    ;
+}
+.bktitle{
+    order: -1;
+    font-size: 30px;
+    text-align: center;
+    
+}
+.digital{
+    background-color: rgb(126, 32, 126);
+    width: 10vh;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+}
+.outnow, .comingup{
+    text-align: center;
+    width: 17vh;
+    border-radius: 8px;
+    
+}
+
+tbody{
+    background-color: rgb(241, 232, 232);
+}
+th{
+    font-size: 24px;
+}
+
+.subs{
+    text-align: center;
+    width: 15vh;
+    border-radius: 8px;
+}
+.legerele{
+    display: flex;
+    align-self: center;
+    
+    
+}
+
+@media screen and (min-width:780px){
+    body{
+        margin-left: 50px;
+        margin-right: 50px;
+        height: 100%;
+    }
+    
+    .intable{
+        flex-direction: row;
+        
+    }
+    .legerele{
+        
+        max-width: 100%;
+        
+        margin-left: 10px;
+    }
+    .bktitle{
+        font-size: 20px;
+    }
+    .lnbook, .mbook{
+        order: -1;
+        margin-right: 5px;
+    }
+    .navbar{
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,86 @@
+#navi a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#navi a:hover {
+    background-color: aliceblue;
+    color: red;
+ }
+
+body {
+    background-color: darkcyan;
+}
+img {
+    width: 125px;
+    height: 175px;
+}
+h5{
+    color: #1976D2;
+}
+.summary_book{
+    color: #424242;
+    font-size: .85em;
+}
+.novel{
+    background-color: rgb(54, 54, 234);
+}
+.manga{
+    background-color: brown;
+}
+.novel, .manga{
+    text-align: center;
+}
+
+.item {
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+
+#mydiv {
+    background-color: white;
+}
+#filter, #filter2{
+    
+    padding: 10px;
+}
+
+.card{
+    margin: 0 .5em;
+    width: 80%;
+}
+.card-wrapper{
+    display: flex;
+}
+            
+#cont{
+    display:flex;
+    flex-direction: column;
+}
+@media screen and (min-width:780px){
+    #cont{
+        flex-direction:row;
+    }
+    body {
+        margin-left: 50px;
+        margin-right: 50px;
+        height: 100%;
+    }
+    .navbar{
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+@media screen and (max-width:779px) {
+    #filter{
+        border: 1px solid black;
+        display: none;
+    }
+}

@@ -1,0 +1,59 @@
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+nav a:hover{
+    background-color: aliceblue;
+    color: red;
+}
+
+img{
+    width: 125px;
+    height: 175px;
+}
+/*.img_width{
+    width: 125px;
+    padding: 0;
+} */
+.card-wrapper{
+    display: flex;
+    
+}
+.card{
+    margin: 0 .5em;
+    width: 125px;
+}
+.novel{
+    background-color: rgb(54, 54, 234);
+}
+.manga{
+    background-color: brown;
+}
+.card-body{
+    text-align: center;
+    font-size: 12px;   
+}
+.sr-only{
+    color: black;
+}
+
+@media screen and (min-width:780px){
+    body{
+        background-color: darkcyan;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .mydiv{
+        background-color: white;
+    }
+    .container-md{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar{
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+}

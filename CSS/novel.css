@@ -1,0 +1,66 @@
+#navi a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+#navi a:hover {
+    background-color: aliceblue;
+    color: red;
+}
+
+body {
+    background-color: darkcyan;
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.mydiv{
+        background-color: white;
+        
+}
+.imagehead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(181, 181, 192);
+    border-radius: 30px;
+    padding-top: 10px;
+}
+.imagehead img{
+    width: 300px;
+}
+.item {
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+.divimg img{
+    width: 125px;
+    height: 175px;
+}
+#but{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+@media screen and (min-width:780px) {
+    .imagehead{
+        flex-direction: row;
+        border-radius: 0%;
+    }
+    body{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .navbar{
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+}

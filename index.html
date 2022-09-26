@@ -5,40 +5,383 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AnimeNovelsRead</title>
-        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="CSS/home.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
         <style>
+            .card-body{
+                color: aliceblue;
+            }
+            .d-flex a{
+                text-decoration: none;
+                color: black;
+            }
+            @media screen and (min-width:780px){
+                body{
+                    background-color: darkcyan;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+                .mydiv{
+                    background-color: white;
+                }
+                .container-md{
+                    display: flex;
+                    flex-direction: row;
+                }
+                .navbar{
+                    padding: 10px;
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
             
         </style>
     </head>
     <body>
-        <div class="d-sm-flex flex-column">
-            <header><!-- class="bg-primary text-center sticky-top" -->
-                <h1><a href="homepage.html"> AnimeNovelsRead</a></h1>
+        <div class="mydiv">
+            <header class="bg-dark text-center p-3">
+                <h1><a href="index.html" class="text-white text-decoration-none"> AnimeNovelsRead</a></h1>
             </header>
-            <nav class="navbar sticky-bottom navbar-expand-sm bg-primary">
-                <a href="homepage.html">Home</a>
-                <a href="series.html">Series</a>
-                <a href="calendar.html">Calendar</a>
-                <a href="contact.html">Contact Us</a>
+            <nav class="navbar bg-primary">
+                <div>
+                    <a href="index.html">Home</a>
+                </div>
+                <div>
+                    <a href="series.html">Series</a>
+                </div>
+                <div>
+                    <a href="calendar.html">Calendar</a>
+                </div>
+                <div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div>
+                    <a href="log_in.html">Log In</a>
+                </div>
+                    
             </nav>
-            <article>
-                article
-                <h2>Welcome To AnimeNovelsRead</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, cumque quasi dolore ratione voluptatibus minus! Asperiores, non quis. Placeat magnam recusandae, tempora cumque ipsum illo magni nobis minus consequatur doloremque.</p>
-                <br>
-                <h2>New Releases</h2>
-                <p>images here</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo itaque quae dolorum iure dignissimos numquam odio nostrum natus eveniet a?</p>
-                <br>
-                <h2>Monthly Catch-UP Reads</h2>
-                <p>imges here</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum quo ipsa quas ad assumenda id molestiae amet deleniti esse.</p>
+            <div class="container-md">
+                <article class="p-1">
+                    <h2>Welcome To AnimeNovelsRead</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, cumque quasi dolore ratione voluptatibus minus! Asperiores, non quis. Placeat magnam recusandae, tempora cumque ipsum illo magni nobis minus consequatur doloremque.</p>
+                    <br>
+                    <div>
+                        <h2>New Releases</h2>
+                        
+    
+                        <!--For tablet and above  d-none d-sm-block-->
+                        <div id="newreleases" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <!--item 1-->
+                                <div class="carousel-item active">
+                                    <div class="card-wrapper">
+                                        <div class="card">
+                                            <a href="/Novel_pages/tearmoon.html">
+                                                <img class="card-img-top" src="Images/light_novels/tearmoon_empire_story_ln/tearmoon_empire_story_v4.jpg" alt="Card image cap">
+                                                <div class="card-body novel">
+                                                <p class="card-text">Novel</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card">
+                                            <a href="/Novel_pages/archdemon.html">
+                                                <img class="card-img-top" src="Images/light_novels/archdemons_dilema_ln/archdemons_dilema_v2.jpg" alt="Card image cap">
+                                                <div class="card-body novel">
+                                                <p class="card-text">Novel</p>  
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card">
+                                            <a href="/Novel_pages/overlord.html">
+                                                <img class="card-img-top" src="Images/light_novels/overlord_ln/overlord_v1.jpg" alt="Card image cap">
+                                                <div class="card-body novel">
+                                                <p class="card-text">Novel</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card">
+                                            <a href="/Novel_pages/tenseisword.html">
+                                                <img class="card-img-top" src="Images/light_novels/reincarnated_as_a_sword/reincarnated_as_a_sword.jpg" alt="Card image cap">
+                                                <div class="card-body novel">
+                                                <p class="card-text">Novel</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Item 2-->
+                                <div class="carousel-item">
+                                    <div class="card-wrapper">
+                                        <div class="card">
+                                            <a href="/Novel_pages/86.html">
+                                                <img class="card-img-top" src="Images/light_novels/86/86-eighty-six_v1.jpg" alt="Card image cap">
+                                                <div class="card-body novel">
+                                                <p class="card-text">Novel</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card">
+                                            <a href="/Manga_pages/iruma.html">
+                                                <img class="card-img-top" src="Images/manga/iruma-kun/iruma-kun_v3.jpg" alt="Card image cap">
+                                                <div class="card-body manga">
+                                                <p class="card-text">Manga</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card">
+                                            <a href="/Novel_pages/fmp.html">
+                                                <img class="card-img-top" src="Images/light_novels/full_metal_panic_ln/full_metal_panic_v1.jpg" alt="Card image cap">
+                                                <div class="card-body novel">
+                                                <p class="card-text">Novel</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card">
+                                            <a href="/Manga_pages/freiren.html">
+                                                <img class="card-img-top" src="Images/manga/sousou_no_freiren/freiren_v3.jpg" alt="Card image cap">
+                                                <div class="card-body manga">
+                                                <p class="card-text">Manga</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Item 3-->
+                                <div class="carousel-item">
+                                    <div class="card-wrapper">
+                                        <div class="card">
+                                            <a href="/Manga_pages/spyxfamily.html">
+                                                <img class="card-img-top" src="Images/manga/spyXfamily/spyxfamily_v3.jpg" alt="Card image cap">
+                                                <div class="card-body manga">
+                                                <p class="card-text">Manga</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card">
+                                            <a href="/Manga_pages/spyxfamily.html">
+                                                <img class="card-img-top" src="Images/manga/spyXfamily/spyxfamily_v4.jpg" alt="Card image cap">
+                                                <div class="card-body manga">
+                                                <p class="card-text">Manga</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card">
+                                            <a href="/Novel_pages/myhappymarriage.html">
+                                                <img class="card-img-top" src="Images/light_novels/my_happy_marriage_ln/my_happy_marriage_v1.jpg" alt="Card image cap">
+                                                <div class="card-body novel">
+                                                <p class="card-text">Novel</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card">
+                                            <a href="/Manga_pages/kuroko.html">
+                                                <img class="card-img-top" src="Images/manga/kurokos_basket/kuroko_v1.jpg" alt="Card image cap">
+                                                <div class="card-body novel">
+                                                <p class="card-text">Manga</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            
+                            <a class="carousel-control-prev" href="#newreleases" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#newreleases" role="button" data-bs-slide="next">
+                                <span class="sr-only">Next</span>
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo itaque quae dolorum iure dignissimos numquam odio nostrum natus eveniet a?</p>
+                    </div>
+                    <br>
+                    <div>
+                        <h2>Here's Our Recomendation</h2>
+                        <div class="card-wrapper mb-3">
+                            <div class="card">
+                                <a href="/Novel_pages/tearmoon.html">
+                                    <img class="card-img-top" src="Images/light_novels/tearmoon_empire_story_ln/tearmoon_empire_story_v1.jpg" alt="Card image cap">
+                                    <div class="card-body novel">
+                                    <p class="card-text">Novel</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="/Novel_pages/isekaishoku.html">
+                                    <img class="card-img-top" src="Images/light_novels/isekai_shoukudou_ln/isekai_shoukudou_v1.jpg" alt="Card image cap">
+                                    <div class="card-body novel">
+                                    <p class="card-text">Novel</p>  
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="/Novel_pages/konosuba.html">
+                                    <img class="card-img-top" src="Images/light_novels/konosuba_ln/konosuba_v1.jpg" alt="Card image cap">
+                                    <div class="card-body novel">
+                                    <p class="card-text">Novel</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="/Manga_pages/spyxfamily.html">
+                                    <img class="card-img-top" src="Images/manga/spyXfamily/spyxfamily_v1.jpg" alt="Card image cap">
+                                    <div class="card-body manga">
+                                    <p class="card-text">Manga</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <p>These Titles of Novels or Manga are Easy to read for readers who just started picking up anime light novels.</p>
+                    </div>
+                    <br>
+                    <div>
+                        <h2>Monthly Catch-UP Reads</h2>
+                        <div id="catch_up" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card-wrapper">
+                                        <div class="card">
+                                            <img class="card-img-top" src="Images/light_novels/tearmoon_empire_story_ln/tearmoon_empire_story_v1.jpg" alt="Card image cap">
+                                            <div class="card-body novel">
+                                            <p class="card-text">Novel</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="Images/light_novels/archdemons_dilema_ln/archdemons_dilema_v1.jpg" alt="Card image cap">
+                                            <div class="card-body novel">
+                                            <p class="card-text">Novel</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="Images/light_novels/overlord_ln/overlord_v1.jpg" alt="Card image cap">
+                                            <div class="card-body novel">
+                                            <p class="card-text">Novel</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="Images/light_novels/reincarnated_as_a_sword/reincarnated_as_a_sword.jpg" alt="Card image cap">
+                                            <div class="card-body novel">
+                                            <p class="card-text">Novel</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-wrapper">
+                                        <div class="card">
+                                            <img class="card-img-top" src="Images/light_novels/86/86-eighty-six_v1.jpg" alt="Card image cap">
+                                            <div class="card-body novel">
+                                            <p class="card-text">Novel</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="Images/manga/iruma-kun/iruma-kun_v1.jpg" alt="Card image cap">
+                                            <div class="card-body manga">
+                                            <p class="card-text">Manga</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="Images/light_novels/full_metal_panic_ln/full_metal_panic_v1.jpg" alt="Card image cap">
+                                            <div class="card-body novel">
+                                            <p class="card-text">Novel</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="Images/manga/sousou_no_freiren/freiren_v1.jpg" alt="Card image cap">
+                                            <div class="card-body manga">
+                                            <p class="card-text">Manga</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <a class="carousel-control-prev" href="#catch_up" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#catch_up" role="button" data-bs-slide="next">
+                                <span class="sr-only">Next</span>
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum quo ipsa quas ad assumenda id molestiae amet deleniti esse.</p>
+                    </div>
+                </article>
+                <aside>
+                    <div>
+                        <div class="nav nav-tabs">
+                            <a href="#comings" class="nav-item nav-link" data-bs-toggle="tab">Coming Soon!</a>
+                            <a href="#recent" class="nav-item nav-link" data-bs-toggle="tab">Recent</a>
+                        </div>
+                        
+                        <div class="tab-content">
+                            <!--Coming Soon Items-->
+                            <div class="tab-pane active" id="comings">
+                                <div class="row row-cols-1">
+                                    <div class="col mb-1">
+                                        <div class="d-flex">
+                                            <a href="/Novel_pages/tearmoon.html"><img src="Images/light_novels/tearmoon_empire_story_ln/tearmoon_empire_story_v5.jpg" alt=""></a>
+                                             <div>
+                                                <a href="/Novel_pages/tearmoon.html"><h5>Tearmoon Empire Story Volume 5</h5></a>
+                                                <small>Novel</small>
+                                                <p>Release in September 30, 2022</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-1">
+                                        <div class="d-flex">
+                                            <a href="/Novel_pages/isekaishoku.html"><img src="Images/light_novels/isekai_shoukudou_ln/isekai_shoukudou_v3.jpg" alt=""></a>
+                                             <div>
+                                                <a href="/Novel_pages/isekaishoku.html"><h5>Restaurant from Another World Volume 3</h5></a>
+                                                <small>Novel</small>
+                                                <p>Release in September 30, 2022</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-            </article>
-            <footer>
+                            <!--Recent Items-->
+                            <div class="tab-pane" id="recent">
+                                <div class="row row-cols-1">
+                                    <div class="col mb-1">
+                                        <div class="d-flex">
+                                            <a href="/Novel_pages/tearmoon.html"><img src="Images/light_novels/tearmoon_empire_story_ln/tearmoon_empire_story_v4.jpg" alt=""></a>
+                                             <div>
+                                                <a href="/Novel_pages/tearmoon.html"><h5>Tearmoon Empire Story Volume 4</h5></a>
+                                                <small>Novel</small>
+                                                <p>Release in September 30, 2022</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-1">
+                                        <div class="d-flex">
+                                            <a href="/Novel_pages/isekaishoku.html"><img src="Images/light_novels/isekai_shoukudou_ln/isekai_shoukudou_v2.jpg" alt=""></a>
+                                             <div>
+                                                <a href="/Novel_pages/isekaishoku.html"><h5>Restaurant from Another World Volume 2</h5></a>
+                                                <small>Novel</small>
+                                                <p>Release in September 30, 2022</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </aside>
+            </div>
+            <footer class="bg-dark text-white text-center p-3">
                 &copy; AnimeNovelsRead 2022. All rights reserved.
             </footer>
         </div>
